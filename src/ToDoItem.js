@@ -9,12 +9,16 @@ class ToDoItem extends Component{
     }
 
     render(){
+        const {content} =  this.props ;
         return (
-          <div onClick={this.handleClick}>{this.props.content}</div>  
+          <div onClick={this.handleClick}>{content}</div>  
         )
     }
     handleClick(){
-        this.props.deleteIt(this.props.index)
+        const {deleteIt,index} = this.props;
+        deleteIt(index);
+        //上面2行下面1行是优化后的代码
+        // this.props.deleteIt(this.props.index)
         // alert(this.props.index)//获取点击的下标
 
     }
