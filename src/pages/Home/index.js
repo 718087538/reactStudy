@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-
+import { Route, Link } from "react-router-dom"
+import Mine from "../Mine"
 
 class Home extends Component {
     constructor(props) {
@@ -10,7 +11,11 @@ class Home extends Component {
     }
     render() {
         return (
-            <h1>HEllo World</h1>
+            <>
+                <a href='#/mine'>我的</a>
+                <h1>现在位于首页</h1>
+
+            </>
         )
     }
 }

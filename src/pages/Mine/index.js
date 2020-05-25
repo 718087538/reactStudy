@@ -9,7 +9,11 @@ class Mine extends Component {
     }
     render() {
         return (
-            <h1>我的</h1>
+            <>
+                <a href='#/'>首页</a>
+                <h1>现在位于我的</h1>
+
+            </>
         )
     }
 }
